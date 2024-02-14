@@ -14,7 +14,7 @@ public final class ImmutableClass {
   public ImmutableClass(String name, Integer age, List<ImmutableClass> immutableClassList) {
     this.name = name;
     this.age = age;
-    this.immutableClassList = immutableClassList;
+    this.immutableClassList = new ArrayList<>(immutableClassList);
   }
 
   public String getName() {
