@@ -28,4 +28,13 @@ public final class ImmutableClass {
   public List<ImmutableClass> getImmutableClassList() {
     return nonNull(immutableClassList) ? new ArrayList<>(immutableClassList) : new ArrayList<>();
   }
+
+  @Override
+  public String toString() {
+    return "ImmutableClass{" +
+        "name='" + name + '\'' +
+        ", age=" + age +
+        ", immutableClassList=" + immutableClassList +
+        '}';
+  }
 }
